@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>twlv-ui</title>
+
+  <link rel="stylesheet" href="../node_modules/electron-tabs/electron-tabs.css">
+  <style>
+    html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+
+      /* -ms-overflow-style: scrollbar;
+      -webkit-app-region:drag; */
+    }
+
+    .etabs-tabgroup {
+      display: flex;
+    }
+
+    .etabs-tabgroup > div {
+      float: inherit;
+    }
+
+    .etabs-tabs {
+      overflow: auto;
+      white-space: nowrap;
+      flex: 1;
+    }
+
+    .etabs-tab {
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="etabs-tabgroup">
+    <div class="etabs-buttons">
+      <!-- <a href="#">Menu</a> -->
+    </div>
+    <div class="etabs-tabs"></div>
+  </div>
+  <div class="etabs-views"></div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
